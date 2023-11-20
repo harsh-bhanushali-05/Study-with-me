@@ -1,1 +1,1 @@
-{"version":3,"sources":["scss/Pomodoro.scss","Pomodoro.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,eAAA;EACA,cAAA;ACCJ;;ADCA;EACI,kBAAA;ACEJ","file":"Pomodoro.css"}
+{"version":3,"sources":["scss/Pomodoro.scss","Pomodoro.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,cAAA;ACCJ;;ADCA;EACI,kBAAA;ACEJ;;ADAA;EACI,aAAA;EACA,eAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;ACGJ","file":"Pomodoro.css"}

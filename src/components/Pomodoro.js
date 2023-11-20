@@ -57,8 +57,10 @@ function Pomodoro() {
     <div className="Time-col">
       <CircularProgressbar className="ProgressBar" value={percentage} text={`${calTime()}`} />
       <Buttons isCounting={setIsActive}/>
+      <div className="time">
       <Timmer break={SetWrokTime} def={25} min={5} max={60}/>
       <Timmer break={SetBreakTime} def={5} min={1} max={30}/>
+      </div>
     </div>
   );
 }

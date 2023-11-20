@@ -1,0 +1,13 @@
+.task-indi {
+  display: flex;
+}
+
+.Task {
+  justify-self: center;
+  align-self: center;
+  margin-left: 10%;
+}
+
+.chkbox {
+  justify-content: flex-end;
+}/*# sourceMappingURL=Todo.css.map */
