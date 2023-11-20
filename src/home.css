@@ -1,0 +1,9 @@
+body {
+  background-color: #FFEBD8;
+}
+
+.flex {
+  display: flex;
+  justify-content: center space-evenly;
+  align-items: center;
+}/*# sourceMappingURL=home.css.map */

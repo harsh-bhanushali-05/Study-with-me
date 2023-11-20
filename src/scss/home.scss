@@ -1,0 +1,9 @@
+@import "./setup.scss";
+body{
+    background-color: $background;
+}
+.flex{
+    display: flex;
+    justify-content: center space-evenly;
+    align-items: center;
+}
