@@ -1,9 +1,38 @@
 body {
-  background-color: #FFEBD8;
+  background-color: #FFE3BB;
 }
 
 .flex {
   display: flex;
-  justify-content: center space-evenly;
+  justify-content: space-evenly; /* Fix: Removed 'center' */
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media screen and (width < 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.pomodoro {
+  order: 1;
+}
+
+.TODO {
+  order: 2;
+}
+@media screen and (width < 768px) {
+  .TODO {
+    order: 3;
+  }
+}
+
+.music {
+  order: 3;
+}
+@media screen and (width < 768px) {
+  .music {
+    order: 2;
+  }
 }/*# sourceMappingURL=home.css.map */

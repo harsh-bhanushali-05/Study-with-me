@@ -1,6 +1,22 @@
 .card{
+    margin-top: 10%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    // align-self: center;
-    // justify-self: center;
+}
+.render{
+    display: flex;
+}
+.icon{
+    font-size: 2rem;
+    margin-left: 5%;
+    &:hover{
+        color: red;
+    }
+}
+.change{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center space-around;
+    align-items: center;
 }

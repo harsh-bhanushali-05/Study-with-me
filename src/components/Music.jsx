@@ -3,12 +3,10 @@ import AppleMusic from "./AppleMusic";
 import Spotify from "./Spotify";
 import SoundCloud from "./SoundCloud";
 import "../MusicCard.css";
-
 function Music() {
   const [musicProvider, setMusicProvider] = useState("Apple");
 
   useEffect(() => {
-    // You can perform any additional actions when the music provider changes
   }, [musicProvider]);
   function spo(str) {
     setMusicProvider(str);
@@ -30,11 +28,16 @@ function Music() {
   return (
     <div>
       <div className="card">
-        {renderMusicProvider()}
+        <div className="render">{renderMusicProvider()}</div>
       </div>
-      <i onClick={() => spo("Apple")} className="fa-brands fa-apple"></i>
-      <i onClick={() => spo("Spotify")} className="fa-brands fa-spotify"></i>
-      <i onClick={() => spo("SoundCloud")} className="fa-brands fa-soundcloud"></i>
+      <div className="change">
+      <i  onClick={() => spo("Apple")} className="icon fa-brands fa-apple"></i>
+      <i  onClick={() => spo("Spotify")} className="icon fa-brands fa-spotify"></i>
+      <i 
+        onClick={() => spo("SoundCloud")}
+        className="icon fa-brands fa-soundcloud"
+      ></i>
+      </div>
     </div>
   );
 }

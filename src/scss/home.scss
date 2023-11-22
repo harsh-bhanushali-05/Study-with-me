@@ -1,9 +1,33 @@
 @import "./setup.scss";
-body{
+
+body {
     background-color: $background;
 }
-.flex{
+
+.flex {
     display: flex;
-    justify-content: center space-evenly;
-    align-items: center;
+    justify-content: space-evenly; /* Fix: Removed 'center' */
+    align-items: center ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @media screen and (width<768px) {
+        flex-direction: column;
+    }
+}
+
+.pomodoro {
+    order: 1;
+}
+
+.TODO {
+    order: 2;
+    @media screen and (width<768px) {
+        order: 3;
+    }
+}
+.music {
+    order: 3;
+    @media screen and (width<768px) {
+        order: 2;
+    }
 }

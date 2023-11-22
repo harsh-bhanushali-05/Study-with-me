@@ -1,3 +1,4 @@
+@import "./setup.scss";
 .task-indi{
     display: flex;
 
@@ -5,8 +6,37 @@
 .Task{
     justify-self: center;
     align-self: center;
-    margin-left: 10%;
 }
 .chkbox{
     justify-content: flex-end;
 }
+
+.Task {
+    max-height: 40vh; 
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+  }
+  
+  .task-indi {
+    border: 1px solid brown; /* Add a border to each individual task */
+    border-radius: 10px;
+    margin-bottom: 8px; /* Add some spacing between tasks */
+    padding: 2px; /* Add padding for better appearance */
+    display: flex; /* Use flex display for better layout */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .chkbox {
+    margin-right: 8px; /* Add spacing between checkbox and task text */
+  }
+  .input{
+    color: blue;
+    position: relative;
+    bottom: 5vh;
+  }
+  .add-btn{
+    padding: 5px 15px ;
+    border: solid 1px red ;
+    border-radius: 5px;
+    background-color: $background;
+  }
+  

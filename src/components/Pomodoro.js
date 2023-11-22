@@ -52,10 +52,15 @@ function Pomodoro() {
     setIsActive(false);
 
   },[workTime,BreakTime])
-  // all the logic for the pomoro timer is done
   return (
     <div className="Time-col">
-      <CircularProgressbar className="ProgressBar" value={percentage} text={`${calTime()}`} />
+      <div className="progressbar-container">
+      <CircularProgressbar
+        className="ProgressBar"
+        value={percentage}
+        text={`${calTime()}`}
+      />
+    </div>
       <Buttons isCounting={setIsActive}/>
       <div className="time">
       <Timmer break={SetWrokTime} def={25} min={5} max={60}/>

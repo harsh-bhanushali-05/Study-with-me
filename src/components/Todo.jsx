@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Todo.css";
+
 function Todo() {
   const [task, addTask] = useState([]);
   const [curr, setCurrenttask] = useState("");
@@ -10,11 +11,14 @@ function Todo() {
   }, [task]);
 
   function AddToList() {
-    setCurrenttask(curr.trim());
-    addTask([...task, { value: curr, key: id }]);
-    setId((prev) => prev + 1);
-    setCurrenttask("");
+    if (curr.trim() !== "") {
+      setCurrenttask(curr.trim());
+      addTask([...task, { value: curr, key: id }]);
+      setId((prev) => prev + 1);
+      setCurrenttask("");
+    }
   }
+
   function handleKeyPress(e) {
     if (e.key === "Enter") {
       AddToList();
@@ -30,32 +34,35 @@ function Todo() {
   }
 
   return (
-    <div className="Task">
+    <div>
       <input
+        className="input bor"
         type="text"
         value={curr}
         placeholder="Add Task"
         onChange={(e) => setCurrenttask(e.target.value)}
         onKeyUp={(e) => handleKeyPress(e)}
       />
-      <button onClick={AddToList}>add task</button>
-      {task.map((element, key) => {
-        return (
-        <div className="task-indi">
-        <input className="chkbox" type="checkBox" onChange={() => {
-              removeTask(element.key);
-            }} />
-          <h1
-            onClick={() => {
-              removeTask(element.key);
-            }}
-            key={key}
-          >
-            {element.value}
-          </h1>
+      <button className="input add-btn" onClick={AddToList}>
+        +
+      </button>
+      <div className="Task">
+        {task.map((element, key) => (
+          <div className="task-indi" key={key}>
+            <input
+              className="chkbox"
+              type="checkbox"
+              id={`checkbox-${element.key}`}
+              onChange={() => {
+                removeTask(element.key);
+              }}
+            />
+            <label htmlFor={`checkbox-${element.key}`}>
+              <h1>{element.value}</h1>
+            </label>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }

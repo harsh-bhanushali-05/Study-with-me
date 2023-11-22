@@ -12,3 +12,36 @@
     align-items: center;
     flex-direction: column;
 }
+/* YourComponent.css */
+/* Todo.css */
+
+  /* Add any other styles as needed */
+  
+.progressbar-container {
+    width: 100%; /* Set your desired width */
+    margin: auto; /* Center the component */
+  }
+  
+  .ProgressBar {
+    /* Customize CircularProgressbar styles */
+    width: 100%;
+    height: 100%;
+    /* Add any other styles you want to customize */
+  }
+  
+  .ProgressBar path {
+    /* Customize CircularProgressbar path styles */
+    stroke: red; /* Set your desired stroke color */
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+  
+  .ProgressBar text {
+    /* Customize CircularProgressbar text styles */
+    fill: #3f51b5; /* Set your desired text color */
+    font-size: 20px; /* Set your desired font size */
+    font-weight: bold;
+  }
+  
+  /* Add any additional styles as needed */
+  
