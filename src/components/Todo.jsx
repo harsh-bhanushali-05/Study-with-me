@@ -1,3 +1,5 @@
+// Todo.js
+
 import React, { useState, useEffect } from "react";
 import "../Todo.css";
 
@@ -49,17 +51,17 @@ function Todo() {
       <div className="Task">
         {task.map((element, key) => (
           <div className="task-indi" key={key}>
-            <input
-              className="chkbox"
-              type="checkbox"
-              id={`checkbox-${element.key}`}
-              onChange={() => {
-                removeTask(element.key);
-              }}
-            />
             <label htmlFor={`checkbox-${element.key}`}>
               <h1>{element.value}</h1>
             </label>
+            <button
+              className="remove-btn"
+              onClick={() => {
+                removeTask(element.key);
+              }}
+            >
+              <i class="fa-solid fa-check"></i>
+            </button>
           </div>
         ))}
       </div>

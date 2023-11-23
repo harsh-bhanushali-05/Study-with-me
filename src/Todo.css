@@ -17,7 +17,6 @@
 }
 
 .task-indi {
-  border: 1px solid brown; /* Add a border to each individual task */
   border-radius: 10px;
   margin-bottom: 8px; /* Add some spacing between tasks */
   padding: 2px; /* Add padding for better appearance */
@@ -40,4 +39,64 @@
   border: solid 1px red;
   border-radius: 5px;
   background-color: #FFE3BB;
+}
+
+/* Todo.css */
+.input {
+  margin-right: 8px;
+}
+
+.bor {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Task {
+  margin-top: 16px;
+}
+
+.task-indi {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chkbox {
+  margin-right: 8px;
+}
+
+/* Style the checkbox */
+.chkbox + label {
+  cursor: pointer;
+}
+
+/* Style checked checkbox label */
+.chkbox:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Style the remove button */
+.remove-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
 }/*# sourceMappingURL=Todo.css.map */
