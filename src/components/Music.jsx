@@ -4,7 +4,7 @@ import Spotify from "./Spotify";
 import SoundCloud from "./SoundCloud";
 import "../MusicCard.css";
 function Music() {
-  const [musicProvider, setMusicProvider] = useState("Apple");
+  const [musicProvider, setMusicProvider] = useState("Spotify");
 
   useEffect(() => {
   }, [musicProvider]);

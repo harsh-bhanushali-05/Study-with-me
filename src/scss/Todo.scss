@@ -10,9 +10,11 @@
 .chkbox{
     justify-content: flex-end;
 }
-
 .Task {
-    max-height: 40vh; 
+    max-height: 40vh;
+    min-width: 40vw;
+    width: 100%;
+    overflow-x: auto; 
     overflow-y: auto; /* Add a vertical scrollbar when content overflows */
   }
   
@@ -28,13 +30,15 @@
     margin-right: 8px; /* Add spacing between checkbox and task text */
   }
   .input{
-    color: blue;
+    border-radius: 10px;
+    background-color: $input;
+    color: $input-txt;
     position: relative;
     bottom: 5vh;
   }
   .add-btn{
     padding: 5px 15px ;
-    border: solid 1px red ;
+    border: solid 1px $second ;
     border-radius: 5px;
     background-color: $background;
   }
@@ -43,7 +47,13 @@
 .input {
   margin-right: 8px;
 }
-
+.Pos{
+  @media screen and (width>768px) {
+    position: fixed;
+    top:10%;
+    left:45%;
+  }
+}
 .bor {
   border: 1px solid #ccc;
   padding: 8px;
@@ -51,9 +61,10 @@
 }
 
 .add-btn {
-  background-color: #4caf50;
+  background-color: #296EB4;
   color: #fff;
   border: none;
+  margin-right: 20px;
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
@@ -64,6 +75,7 @@
 }
 
 .task-indi {
+  color:#296EB4;
   display: flex;
   align-items: center;
   margin-bottom: 8px;
@@ -86,15 +98,17 @@
 
 /* Style the remove button */
 .remove-btn {
-  background-color: #f44336;
+  background-color: $btn;
   color: #fff;
+  border-radius: 50%;
   border: none;
   padding: 4px 8px;
   font-size: 12px;
   cursor: pointer;
   margin-left: 8px;
+  margin-right: 5%;
 }
 
 .remove-btn:hover {
-  background-color: #d32f2f;
+  background-color:$btn-dark;
 }

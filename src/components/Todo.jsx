@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 import "../Todo.css";
 
 function Todo() {
-  const [task, addTask] = useState([]);
+  const [task, addTask] = useState([{key:0,value:"Type your Tasks"},{key:1,value:"Plan your next study session."}]);
   const [curr, setCurrenttask] = useState("");
-  const [id, setId] = useState(0);
+  const [id, setId] = useState(2);
 
   useEffect(() => {
     console.log("Updated task:", task);
@@ -20,7 +20,6 @@ function Todo() {
       setCurrenttask("");
     }
   }
-
   function handleKeyPress(e) {
     if (e.key === "Enter") {
       AddToList();
@@ -37,7 +36,8 @@ function Todo() {
 
   return (
     <div>
-      <input
+      <div className="Pos"> 
+      <input 
         className="input bor"
         type="text"
         value={curr}
@@ -48,13 +48,11 @@ function Todo() {
       <button className="input add-btn" onClick={AddToList}>
         +
       </button>
+      </div>
       <div className="Task">
         {task.map((element, key) => (
           <div className="task-indi" key={key}>
-            <label htmlFor={`checkbox-${element.key}`}>
-              <h1>{element.value}</h1>
-            </label>
-            <button
+          <button
               className="remove-btn"
               onClick={() => {
                 removeTask(element.key);
@@ -62,6 +60,10 @@ function Todo() {
             >
               <i class="fa-solid fa-check"></i>
             </button>
+            <label htmlFor={`checkbox-${element.key}`}>
+              <h1>{element.value}</h1>
+            </label>
+            
           </div>
         ))}
       </div>

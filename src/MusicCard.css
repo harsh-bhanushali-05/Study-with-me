@@ -10,11 +10,12 @@
 }
 
 .icon {
+  color: #E2A3C7;
   font-size: 2rem;
   margin-left: 5%;
 }
 .icon:hover {
-  color: red;
+  color: #D67AB1;
 }
 
 .change {

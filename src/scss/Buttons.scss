@@ -1,29 +1,28 @@
 /* Buttons.css */
-
+@import "./setup.scss";
 .flex3 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 5%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #2980b9;
-  }
-  
-  .active {
-    background-color: #e74c3c;
-  }
-  
-  .active:hover {
-    background-color: #c0392b;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background-color: $btn;
+  color: #fff;
+  padding: 5%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color:$btn-dark;
+}
+
+.active {
+  background-color:$dark;
+}
+
+.active:hover {
+  background-color: darken($dark, 10%);
+}

@@ -10,7 +10,6 @@ function AppleMusic() {
         allow="autoplay *; encrypted-media *; clipboard-write"
         style={{
           width: '100%',
-          maxWidth: '660px',
           overflow: 'hidden',
           borderRadius: '10px',
           transform: 'translateZ(0px)',

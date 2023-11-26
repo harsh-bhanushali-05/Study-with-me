@@ -25,7 +25,7 @@ function Timmer(props) {
                 min={props.min}
                 max={props.max}
                 valueLabelDisplay="auto"
-                sx={{ color: 'red' }}
+                sx={{ color: '#E2A3C7' }}
             />
         </Box>
         <h2 className='value'>{t}</h2>

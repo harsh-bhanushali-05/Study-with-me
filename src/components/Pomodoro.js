@@ -56,10 +56,22 @@ function Pomodoro() {
     <div className="Time-col">
       <div className="progressbar-container">
       <CircularProgressbar
-        className="ProgressBar"
-        value={percentage}
-        text={`${calTime()}`}
-      />
+          className="ProgressBar"
+          value={percentage}
+          text={`${calTime()}`}
+          styles={{
+            // Customize the root progress bar element
+            // Customize the path, trail, and trail background
+            path: { stroke: '#FFD043' },
+            trail: { stroke: '#FFD095' },
+            // Customize the text
+            text: { fill: '#312F2F', fontSize: '20px' },
+          }}
+          textStyles={{
+            // Customize the styles for the text value
+            value: { fontFamily: 'Arial', fontWeight: 'bold' },
+          }}
+        />
     </div>
       <Buttons isCounting={setIsActive}/>
       <div className="time">
