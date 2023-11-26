@@ -6,7 +6,7 @@ function SoundCloud() {
       <iframe
         title="SoundCloud Playlist"
         width="100%"
-        height="300"
+        height="500"
         scrolling="no"
         frameBorder="no"
         allow="autoplay"
@@ -29,7 +29,7 @@ function SoundCloud() {
           target="_blank"
           style={styles.trackLink}
         >
-          2 HOUR NO COPYRIGHT LOFI MUSIC
+          2 HOUR LOFI MUSIC
         </a>
       </div>
     </div>

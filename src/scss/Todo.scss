@@ -1,4 +1,5 @@
 @import "./setup.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 .task-indi{
     display: flex;
 
@@ -14,6 +15,7 @@
     max-height: 40vh;
     min-width: 40vw;
     width: 100%;
+    font-family: 'Inter', sans-serif;
     overflow-x: auto; 
     overflow-y: auto; /* Add a vertical scrollbar when content overflows */
   }
@@ -50,7 +52,7 @@
 .Pos{
   @media screen and (width>768px) {
     position: fixed;
-    top:10%;
+    top:18%;
     left:45%;
   }
 }
