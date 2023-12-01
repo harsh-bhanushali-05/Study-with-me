@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   color: #FFD043;
 }
+@media screen and (width < 768px) {
+  .bg {
+    height: 15vh;
+  }
+}
 
 .title {
   margin-left: 5%;
@@ -24,10 +29,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: end;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   color: #312F2F;
+}
+@media screen and (width > 768px) {
+  .logos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 .logos a {
   color: #312F2F;

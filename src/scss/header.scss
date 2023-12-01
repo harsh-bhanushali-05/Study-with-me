@@ -4,6 +4,9 @@
     display: flex;
     align-self: baseline;
     height: 10vh;
+    @media screen and (width<768px) {
+        height: 15vh;
+    }
     background: linear-gradient(to bottom, $input-txt, $background);
     background-size: 100% calc(100% - 0.5%);
     background-repeat: no-repeat;
@@ -23,9 +26,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: end; 
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    @media screen and (width>768px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+   
     color: #312F2F;
     a{
         color: #312F2F;

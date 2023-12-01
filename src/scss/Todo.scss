@@ -55,6 +55,12 @@
     top:18%;
     left:45%;
   }
+  @media screen and (width<768px) {
+    display: flex;
+    justify-self: center;
+    margin-top: 20%;
+    justify-content: center;
+  }
 }
 .bor {
   border: 1px solid #ccc;
